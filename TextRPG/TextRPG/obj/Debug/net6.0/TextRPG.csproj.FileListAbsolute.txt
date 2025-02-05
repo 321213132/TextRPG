@@ -12,3 +12,18 @@ C:\Users\minhu\source\repos\TextRPG\TextRPG\obj\Debug\net6.0\refint\TextRPG.dll
 C:\Users\minhu\source\repos\TextRPG\TextRPG\obj\Debug\net6.0\TextRPG.pdb
 C:\Users\minhu\source\repos\TextRPG\TextRPG\obj\Debug\net6.0\TextRPG.genruntimeconfig.cache
 C:\Users\minhu\source\repos\TextRPG\TextRPG\obj\Debug\net6.0\ref\TextRPG.dll
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\bin\Debug\net6.0\TextRPG.exe
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\bin\Debug\net6.0\TextRPG.deps.json
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\bin\Debug\net6.0\TextRPG.runtimeconfig.json
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\bin\Debug\net6.0\TextRPG.dll
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\bin\Debug\net6.0\TextRPG.pdb
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\obj\Debug\net6.0\TextRPG.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\obj\Debug\net6.0\TextRPG.AssemblyInfoInputs.cache
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\obj\Debug\net6.0\TextRPG.AssemblyInfo.cs
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\obj\Debug\net6.0\TextRPG.csproj.CoreCompileInputs.cache
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\obj\Debug\net6.0\TextRPG.sourcelink.json
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\obj\Debug\net6.0\TextRPG.dll
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\obj\Debug\net6.0\refint\TextRPG.dll
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\obj\Debug\net6.0\TextRPG.pdb
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\obj\Debug\net6.0\TextRPG.genruntimeconfig.cache
+C:\Users\minhu\OneDrive\바탕 화면\UnityGit\TextRPG\TextRPG\TextRPG\obj\Debug\net6.0\ref\TextRPG.dll

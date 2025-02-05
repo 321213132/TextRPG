@@ -16,7 +16,7 @@ namespace TextRPG
         public int PHealth = 100;//체력
         public int PGold = 1500;//골드
 
-        public int PInput;
+        public int PInput;//플레이어 입력 저장
     }
     public class Item
     {
@@ -30,7 +30,7 @@ namespace TextRPG
         public bool IsPurchased { get; set; }//구매 유무
 
         public static int ItemCount = 0;//AddItem을 사용하기위한 변수
-        public int equIpcount {  get; set; }
+        public int equIpcount {  get; set; } // 장착관리 시스템을 위해 사용
 
         public Item(string name, int type, string data, int atk, int def, int gold, bool isEquipped = false, int equipcount = 0)
         {
@@ -77,10 +77,7 @@ namespace TextRPG
                     Console.Write($"{Gold} G");
                 }
             }
-            Console.WriteLine(equIpcount);
-
             Console.WriteLine();
-
         }
     }
 
@@ -95,9 +92,7 @@ namespace TextRPG
         static void Main(string[] args)
         {
             DataSetting();
-
             PlayerSetting();
-
         }
         //이름과 직업을 설정
         private static void PlayerSetting()
@@ -143,7 +138,6 @@ namespace TextRPG
             Console.Clear();
             //게임 시작화면 함수
             StartMenu();
-
         }
         //게임 시작 화면
         private static void StartMenu()
@@ -152,7 +146,6 @@ namespace TextRPG
             Console.WriteLine("스파르타 마을에 오신 여러분 환영합니다!");
             Console.WriteLine("이곳에서 던전으로 들어가기전 활동을 할 수 있습니다.\n");
             Console.WriteLine("1. 상태창\n2. 인벤토리\n3. 상점\n");
-
             Console.WriteLine("원하시는 행동을 입력해주세요.");
             InputPlayer(minNumber, maxNumber);
             Console.Clear();
@@ -168,7 +161,6 @@ namespace TextRPG
                     Shop();
                     break;
             }
-
         }
 
         //상태창
@@ -181,22 +173,20 @@ namespace TextRPG
             player.PLv = player.PLevel.ToString("D2");//2자릿수로 맞추기
             Console.WriteLine($"Lv. {player.PLv}");                 //레벨
             Console.WriteLine($"{player.PName} ({player.PClass})"); //이름 직업
-            Console.Write($"공격력 : {player.PAtk}");           //공격력
+            Console.Write($"공격력 : {player.PAtk}");               //공격력
             if(player.PAtk != baseAtk)
             {
                 Console.Write(" (+{0})",player.PAtk - baseAtk);
             }
 
-            Console.Write($"\n방어력 : {player.PDef}");           //방어력
+            Console.Write($"\n방어력 : {player.PDef}");              //방어력
             if (player.PDef != baseDef)
             {
                 Console.Write(" (+{0})", player.PDef - baseDef);
             }
-            Console.WriteLine($"\n체 력 : {player.PHealth}");         //체력
-            Console.WriteLine($"Gold : {player.PGold} G");          //Gold
-
+            Console.WriteLine($"\n체 력 : {player.PHealth}");        //체력
+            Console.WriteLine($"Gold : {player.PGold} G");           //Gold
             Console.WriteLine("\n0. 나가기\n");
-
             Console.WriteLine("원하시는 행동을 입력해주세요.");
             InputPlayer(minNumber, maxNumber);
             if (player.PInput == 0)
@@ -222,7 +212,6 @@ namespace TextRPG
                 {
                     items[i].ItemDescription(i + 1, false, false);//번호 X ,가격보기 X
                 }
-
             }
             Console.WriteLine("\n1. 장착 관리\n0. 나가기\n");
             Console.WriteLine("원하시는 행동을 입력해주세요");
@@ -237,14 +226,11 @@ namespace TextRPG
                 Console.Clear();
                 EquipMenu();
             }
-
-
         }
         //장착관리
         private static void EquipMenu()
         {
             minNumber = 0;
-            
             string equipText = "";
 
             while (true)
@@ -308,8 +294,6 @@ namespace TextRPG
                             }
                         }
                     }
-                    
-
                 }
                 Console.Clear();
             }
@@ -395,7 +379,7 @@ namespace TextRPG
         private static void DataSetting()
         {
             items = new Item[6];//아이템을 배열에 저장
-
+            
             //이름,타입,설명, 공격력,방어력,골드
             AddItem(new Item("무쇠 갑옷", 0, "무쇠로 만들어져 튼튼한 갑옷입니다.", 0, 7, 500));
             AddItem(new Item("수련자 갑옷", 0, "수련에 도움을 주는 갑옷입니다.", 0, 5, 1000));
